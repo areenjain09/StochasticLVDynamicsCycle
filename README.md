@@ -37,13 +37,13 @@ This guarantees:
 
 ## Features
 
-- ✅ Deterministic Goodwin/LV dynamics
-- ✅ Stochastic Euler–Maruyama simulation
-- ✅ Approximate maximum likelihood estimation (MLE)
-- ✅ Cycle metrics (amplitude, period)
-- ✅ Ensemble diagnostics and goodness-of-fit
-- ✅ Phase plots, contour plots, and time-series figures
-- ✅ Empirical application using FRED data
+-  Deterministic Goodwin/LV dynamics
+-  Stochastic Euler–Maruyama simulation
+-  Approximate maximum likelihood estimation (MLE)
+-  Cycle metrics (amplitude, period)
+-  Ensemble diagnostics and goodness-of-fit
+-  Phase plots, contour plots, and time-series figures
+-  Empirical application using FRED data
 
 ---
 
