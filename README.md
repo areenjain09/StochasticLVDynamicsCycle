@@ -48,7 +48,7 @@ This guarantees:
 ---
 
 ## Repository Structure
-
+```
 goodwin-lv/
 ├─ goodwin/
 │ ├─ transforms.py
@@ -62,4 +62,5 @@ goodwin-lv/
 │ ├─ fig_stochastic_contours.py
 │ └─ fig_fred_empirical.py
 └─ data/ (local; not committed)
+```
 
