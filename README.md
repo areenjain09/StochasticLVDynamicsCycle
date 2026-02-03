@@ -48,3 +48,18 @@ This guarantees:
 ---
 
 ## Repository Structure
+
+goodwin-lv/
+├─ goodwin/
+│ ├─ transforms.py
+│ ├─ lv.py
+│ ├─ sim.py
+│ ├─ infer.py
+│ └─ metrics.py
+├─ scripts/
+│ ├─ fig_phase_bounded_deterministic.py
+│ ├─ fig_stochastic_timeseries.py
+│ ├─ fig_stochastic_contours.py
+│ └─ fig_fred_empirical.py
+└─ data/ (local; not committed)
+
