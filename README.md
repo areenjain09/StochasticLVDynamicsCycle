@@ -46,6 +46,11 @@ This guarantees:
 -  Empirical application using FRED data
 
 ---
+## Data Sources
+
+FRED (Federal Reserve Bank of St. Louis: https://fred.stlouisfed.org
+
+___
 
 ## Repository Structure
 ```
