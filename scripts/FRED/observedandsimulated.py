@@ -1,0 +1,16 @@
+fig, ax = plt.subplots(2, 1, figsize=(9.2, 5.5), sharex=True)
+ax[0].plot(df.index, df["E"].values, label="Observed")
+ax[0].plot(df.index, E_sim, "--", label="Simulated")
+ax[0].set_ylabel("Employment rate $E$")
+ax[0].legend()
+
+ax[1].plot(df.index, df["W"].values, label="Observed")
+ax[1].plot(df.index, W_sim, "--", label="Simulated")
+ax[1].set_ylabel("Wage share $W$")
+ax[1].set_xlabel("Date")
+ax[1].legend()
+
+fig.suptitle("Real vs simulated: employment and wage share")
+plt.tight_layout()
+plt.savefig("Fig_empirical_real_vs_sim.png", dpi=300)
+plt.show()
