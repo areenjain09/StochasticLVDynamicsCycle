@@ -1,0 +1,13 @@
+df_s = df[["E","W"]].rolling(SMOOTH_Q, center=True).mean().dropna()
+lags, corrs, best_lag = xcorr_leads(df_s["E"].values, df_s["W"].values, max_lag=MAX_LAG)
+
+plt.figure(figsize=(6.6, 4.2))
+plt.plot(lags, corrs)
+plt.axvline(best_lag, linestyle="--", label=f"Peak lag = {best_lag} qtrs")
+plt.xlabel("Lag (quarters): positive means $E$ leads $W$")
+plt.ylabel("Correlation")
+plt.title(f"Lead–lag relationship (smoothed, {SMOOTH_Q}-quarter MA)")
+plt.legend()
+plt.tight_layout()
+plt.savefig("Fig_empirical_leadlag.png", dpi=300)
+plt.show()
